@@ -31,7 +31,7 @@ private String tipTrenera;
 	}
 	@Override
 	public void print() {
-		System.out.println("Ime i prezime trenera:"+this.imePrezime+" Godine iskustva: "+this.godineIskustva);
-		System.out.println("Godina rodjenja: "+this.godinaRodjenja+ "   Tip trenera : "+this.tipTrenera);
+		super.print();
+		System.out.println("Godina rodjenja: "+this.godinaRodjenja+ "   Tip trenera : "+this.tipTrenera+" Godine iskustva: "+this.godineIskustva);
 	}
 }

@@ -47,8 +47,8 @@ public class Igrac extends Osoba {
 	@Override
 	
 	public void print() {
-		System.out.println("Ime i prezime igraca:"+this.imePrezime+" Broj igraca:  "+this.brojIgraca);
-		System.out.println("Godina rodjenja: "+this.godinaRodjenja+ "   Igra na poziciji: "+this.pozicija);
+		super.print();
+		System.out.println("Godina rodjenja: "+this.godinaRodjenja+ "   Igra na poziciji: "+this.pozicija+" Broj igraca:  "+this.brojIgraca);
 		if (this.kapiten) {
 			System.out.println("Igrac je kapiten");
 		}else {
