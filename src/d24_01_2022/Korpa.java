@@ -21,20 +21,17 @@ public class Korpa {
 		}
 		
 	}
-	public double cenaSaPopustom( int popust) {
+	private double cenaSaPopustom(int popust) {
 		double cenaSaPopustom=0;
 		for (int i=0;i<nizAmbalaza.size();i++) {
-			 cenaSaPopustom= nizAmbalaza.get(i).cena()-popust;
+			 cenaSaPopustom= cenaSaPopustom+nizAmbalaza.get(i).cena();
 		}
-		return cenaSaPopustom;
+		return cenaSaPopustom-popust;
 	}
 	
 	public double cenaKorpe(SuperKartica kartica) {
-		double suma=0;
-		for(int i=0;i<nizAmbalaza.size();i++) {
-			suma=suma+this.cenaSaPopustom(kartica.getPopust());
-		}
-		return suma;
+		
+		return cenaSaPopustom(kartica.getPopust());
 	}
 	
 //	Kreirati klasu Korpa koja ima:
